@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters=" " />
+				<Option projectLinkerOptionsRelation="0" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="1.jpg " />
+				<Option projectCompilerOptionsRelation="0" />
+				<Option projectLinkerOptionsRelation="0" />
+				<Option projectIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/usr/local/include/opencv" />
+			<Add directory="/usr/local/include" />
+			<Add directory="/usr/local/include/opencv2" />
+			<Add directory="/usr/local/include/opencv2/imgproc" />
+		</Compiler>
+		<Linker>
+			<Add library="/usr/local/lib/libopencv_calib3d.so" />
+			<Add library="/usr/local/lib/libopencv_contrib.so" />
+			<Add library="/usr/local/lib/libopencv_core.so" />
+			<Add library="/usr/local/lib/libopencv_features2d.so" />
+			<Add library="/usr/local/lib/libopencv_flann.so" />
+			<Add library="/usr/local/lib/libopencv_gpu.so" />
+			<Add library="/usr/local/lib/libopencv_highgui.so" />
+			<Add library="/usr/local/lib/libopencv_imgproc.so" />
+			<Add library="/usr/local/lib/libopencv_legacy.so" />
+			<Add library="/usr/local/lib/libopencv_ml.so" />
+			<Add library="/usr/local/lib/libopencv_nonfree.so" />
+			<Add library="/usr/local/lib/libopencv_objdetect.so" />
+			<Add library="/usr/local/lib/libopencv_photo.so" />
+			<Add library="/usr/local/lib/libopencv_stitching.so" />
+			<Add library="/usr/local/lib/libopencv_superres.so" />
+			<Add library="/usr/local/lib/libopencv_ts.so" />
+			<Add library="/usr/local/lib/libopencv_video.so" />
+			<Add library="/usr/local/lib/libopencv_videostab.so" />
+			<Add directory="/usr/local/lib" />
+		</Linker>
+		<Unit filename="Histogram" />
+		<Unit filename="Pydown_and_blurring" />
+		<Unit filename="blend" />
+		<Unit filename="cam start" />
+		<Unit filename="canny" />
+		<Unit filename="cannyedge detect" />
+		<Unit filename="contour" />
+		<Unit filename="countours webcam" />
+		<Unit filename="detect circles" />
+		<Unit filename="draw_rect" />
+		<Unit filename="houghmethod" />
+		<Unit filename="main" />
+		<Unit filename="main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mass_moments" />
+		<Unit filename="min_enclosing_circle" />
+		<Unit filename="min_enclosing_video" />
+		<Unit filename="pyramide" />
+		<Unit filename="record_vid" />
+		<Unit filename="snippets" />
+		<Unit filename="thresholding" />
+		<Unit filename="togray" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
