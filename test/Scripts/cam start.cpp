@@ -1,30 +1,3 @@
-
-#include "cv.h"
-#include "highgui.h"
-#include <stdio.h>
-int main( int argc, char** argv ) {
-    CvCapture* capture = 0;
-    IplImage *image = 0;
-    if( argc == 1 || (argc == 2 && strlen(argv[1]) == 1 && isdigit(argv[1][0])))
-        capture = cvCaptureFromCAM( 0 );
-
-    cvNamedWindow( "Input", CV_WINDOW_AUTOSIZE );
-    for(;;)    {
-        int c;
-        image = cvQueryFrame( capture );
-        if( !image )
-            break;
-        cvShowImage( "Input", image );
-        c = cvWaitKey(10);
-        if( (char)c == 27 )
-            break;
-    }
-    cvReleaseCapture( &capture );
-    cvDestroyAllWindows();
-
-    return 0;
-}
-
 ///////////////////////
 //Using Mat
 //////////////////////

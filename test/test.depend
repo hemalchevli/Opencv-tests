@@ -384,10 +384,95 @@
 	"opencv2/core/core.hpp"
 	"opencv2/highgui/highgui_c.h"
 
-1372162381 source:/home/hemal/My_Stuff/learning/cv/test/main.cpp
+1372229444 source:/home/hemal/My_Stuff/learning/cv/test/main.cpp
 	"opencv2/highgui/highgui.hpp"
 	"opencv2/imgproc/imgproc.hpp"
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
+
+1371632068 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/Pydown_and_blurring.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1371621621 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/blend.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1372229599 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/cam start.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1371445993 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/canny.cpp
+	"imgproc.hpp"
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+
+1371721589 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/cannyedge detect.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1372156603 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/contour.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1371901856 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/countours webcam.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1371635606 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/detect circles.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1371731656 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/draw_rect.cpp
+	"cv.h"
+	"highgui.h"
+	"imgproc.hpp"
+	<stdio.h>
+
+1372070347 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/houghmethod.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1371708682 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/main.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
+
+1371903942 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/mass_moments.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv2/imgproc/imgproc.hpp"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1372160368 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/min_enclosing_circle.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv2/imgproc/imgproc.hpp"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1372161632 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/min_enclosing_video.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv2/imgproc/imgproc.hpp"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1371628745 source:/home/hemal/My_Stuff/learning/cv/test/Scripts/pyramide.cpp
+	"cv.h"
+	"highgui.h"
+	<stdio.h>
 

@@ -1,10 +1,11 @@
 // HistogramOpenCV.cpp : Defines the entry point for the console application.
 /* The histograms are drawn with 256 bins.  Each bin corresponds to an intensity level; 0 being completely dark and 255, completely light. This is done because the images being captured have a depth of 8 bits, or a range of 256 intensity levels. The number of pixels that fall into each category are represented by the height of the corresponding bar. No scale is given on the y-axis because the image is scaled such that the highest bar is always at the top of the screen. Since the histogram updates in real time, this y-axis scale would change too fast to see. Therefore the graph shows the relative number of pixels that fall into each category. Only three histograms are shown on the graph, one for the red, green and blue channel. The other colours: cyan, yellow, magenta and white represent overlap. It can be confusing to see all the histograms at the same time so the option to toggle each channel on or off is made available.*/
 
-#include "stdafx.h"
-#include <highgui.h>
-#include <cv.h>
-
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 int main(int argc, char *argv[])
 {
     // Variable to store the keyboard input
