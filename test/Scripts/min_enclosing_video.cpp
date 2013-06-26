@@ -10,7 +10,7 @@ using namespace std;
 Mat src;
 Mat original;
 Mat src_gray;
-int thresh = 119;
+int thresh = 107;
 int max_thresh = 255;
 RNG rng(12345);
 
@@ -54,7 +54,7 @@ int main( int argc, char** argv )
 
         src = cvQueryFrame( capture );
         //Get ROI
-         src = src(cvRect(190,180,250,250));
+         src = src(cvRect(250,190,150,150));
 
 ////////////////////////////////////////////////////////
     /// Load source image and convert it to gray
@@ -66,7 +66,7 @@ int main( int argc, char** argv )
 
     /// Convert image to gray and blur it
     cvtColor( src, src_gray, CV_BGR2GRAY );
-    blur( src_gray, src_gray, Size(5,5) );
+    blur( src_gray, src_gray, Size(7,7) );
 
     /// Create Window
 //    char* source_window = "Source";
@@ -119,7 +119,7 @@ void thresh_callback(int, void* )
     for( uint i = 0; i< contours.size(); i++ )
     {
 
-        if((int)radius[i]>35 && (int)radius[i] < 70)
+        if((int)radius[i]>10 && (int)radius[i] < 70)
         {
             Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );
             drawContours( drawing, contours_poly, i, color, 1, 8, vector<Vec4i>(), 0, Point() );
@@ -143,6 +143,7 @@ void thresh_callback(int, void* )
 }
 
 
+//Display a filled circle with center and radius of 1 pixel
 void MyFilledCircle( Mat img, Point center )
 {
     int thickness = -1;

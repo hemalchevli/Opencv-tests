@@ -143,6 +143,7 @@ void thresh_callback(int, void* )
 }
 
 
+//Display a filled circle with center and radius of 1 pixel
 void MyFilledCircle( Mat img, Point center )
 {
     int thickness = -1;
