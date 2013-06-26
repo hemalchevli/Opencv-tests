@@ -23,46 +23,12 @@ void MyFilledCircle( Mat img, Point center );
 int main( int argc, char** argv )
 {
 
-////////////////////////////////////////////////////////
- int c;
-    CvCapture* capture = 0;
-    Mat image,gray_image;
-
-    if( argc == 1 || (argc == 2 && strlen(argv[1]) == 1 && isdigit(argv[1][0])))
-        capture = cvCaptureFromCAM( 0 );
-
-    cvNamedWindow( "Input", CV_WINDOW_AUTOSIZE );
-
-
-
-
-    ///Wait for cam to stabilize , press ESC when ready
-    for(;;)
-    {
-        image = cvQueryFrame( capture );
-//        cvAddS(image, cvScalar(bright-128,bright-128,bright-128), image);
-
-        //flip(image,image,1);
-        imshow( "Input", image );
-        c = cvWaitKey(10);
-        if( (char)c == 27 )
-            break;
-    }
-
-    for(;;)
-    {
-
-        src = cvQueryFrame( capture );
-        //Get ROI
-         src = src(cvRect(250,190,150,150));
-
-////////////////////////////////////////////////////////
     /// Load source image and convert it to gray
-    //src = imread( argv[1], 1 );
-   // original = imread( argv[1], 1 );
+    src = imread( argv[1], 1 );
+    original = imread( argv[1], 1 );
     ///Get ROI
     //src = src(cvRect(250,190,150,150)); //make roi smaller
-  //  src = original(cvRect(250,190,150,150)); //make roi smaller
+    src = original(cvRect(250,190,150,150)); //make roi smaller
 
     /// Convert image to gray and blur it
     cvtColor( src, src_gray, CV_BGR2GRAY );
@@ -77,10 +43,7 @@ int main( int argc, char** argv )
     createTrackbar( " Threshold:", "Source", &thresh, max_thresh, thresh_callback );
     thresh_callback( 0, 0 );
 
-  c = cvWaitKey(300);
-        if( (char)c == 27 )
-            break;
-    }
+    waitKey(0);
     return(0);
 }
 
